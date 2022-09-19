@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+var title = "Welcome to Astroasdf."
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>asdf <span class="text-gradient">Astrasdfasdfo</span></h1>
+		<div class="bg-blue-500 rounded p-2 text-white">I'm tailwind!</div>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -94,3 +95,4 @@ import Card from '../components/Card.astro';
 		padding: 0;
 	}
 </style>
+
