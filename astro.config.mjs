@@ -7,5 +7,10 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [tailwind()],
   output: "server",
-  adapter: cloudflare({ mode: "directory" })
+  adapter: cloudflare({ mode: "directory" }),
+  vite: {
+    define: {
+      'NODE_VERSION': 14
+    },
+  },
 });
